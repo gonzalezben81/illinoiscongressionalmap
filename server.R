@@ -9,20 +9,20 @@ library(dplyr)
 
 
 ## Illinois Congressional Districts 
-houseillower <- readOGR(dsn = ".",layer = "tl_2016_17_sldl", verbose = FALSE)
+houseillower <- readOGR(dsn = "./data",layer = "tl_2016_17_sldl", verbose = FALSE)
 
-houseilupper <- readOGR(dsn = ".",layer = "tl_2016_17_sldu", verbose = FALSE)
+houseilupper <- readOGR(dsn = "./data",layer = "tl_2016_17_sldu", verbose = FALSE)
 
 ##Creates dataframe of SpatialPolygonData
 houseillowerframe <- as.data.frame(houseillower)
 houseilupperframe <- as.data.frame(houseilupper)
 
 ##Reads in CSV
-illinois_senate <- read.csv("./illinoisstatesenators.csv",
+illinois_senate <- read.csv("./data/illinoisstatesenators.csv",
                             stringsAsFactors = FALSE)
 
 
-illinois_house <- read.csv("./illinoisstatehouse.csv",
+illinois_house <- read.csv("./data/illinoisstatehouse.csv",
                            stringsAsFactors = FALSE)
 
 
