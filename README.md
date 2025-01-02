@@ -33,6 +33,8 @@ R Code to build an interactive political map of Illinois
 
 The shape files are tiger files downloaded from the [U.S. Census](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html):
 
-+ Lower House: https://www2.census.gov/geo/tiger/TIGER2024/SLDL/
++ Lower House (State Legislative District Lower Chamber): https://www2.census.gov/geo/tiger/TIGER2024/SLDL/
 
-+ Upper House: https://www2.census.gov/geo/tiger/TIGER2024/SLDU/
++ Upper House (State Legistlative District Upper Chamber): https://www2.census.gov/geo/tiger/TIGER2024/SLDU/
+
+*Note: The FIPS (Federal Information Processing System) code is useful when figuring out what data belongs to what state: https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt*
