@@ -1,5 +1,5 @@
 ###Load necessary libraries
-# library(rgdal)
+# library(rgdal) ###rgdal is now defunct and no longer available
 library(leaflet)
 library(reshape)
 library(reshape2)
@@ -7,8 +7,6 @@ library(dplyr)
 library(raster)
 library(terra)
 library(sf)
-
-
 
 
 ## Illinois Congressional Districts 
@@ -130,7 +128,7 @@ server <- function(input, output) {
     ) %>%
     addMiniMap(toggleDisplay =  TRUE)%>%
     addMeasure()%>% 
-    addLegend("bottomleft",title = "Illinois Congress",colors = c("blue","red"),labels = c("D = Democrat","R = Republican"),values = ~TOT_POP)
+    addLegend("bottomleft",title = paste0("Illinois Congressional Map: Published ",format(Sys.time()," %b %Y")),colors = c("blue","red"),labels = c("D = Democrat","R = Republican"),values = ~TOT_POP)
   # addLegend("bottomright",values = ~TOT_POP,pal = pal6,title = "Population by County")
   
   output$illinois <- renderLeaflet(illinoismap)
