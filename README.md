@@ -1,9 +1,11 @@
 ---
-output:
-  html_document: default
+title: "Document Title"
+author: "Author Name"
+output: html_document
 ---
+
 # Illinois Congressional Map
-R Code to build an interactive political map of illinois
+R Code to build an interactive political map of Illinois
 
 ![](./www/illinois_congressional_map.png)
 
