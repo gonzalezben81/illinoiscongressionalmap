@@ -1,4 +1,4 @@
-library(rgdal)
+# library(rgdal)
 library(leaflet)
 library(reshape)
 library(reshape2)

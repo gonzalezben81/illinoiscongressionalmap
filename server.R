@@ -1,34 +1,56 @@
-
-library(rgdal)
+###Load necessary libraries
+# library(rgdal)
 library(leaflet)
 library(reshape)
 library(reshape2)
 library(dplyr)
+library(raster)
+library(terra)
+library(sf)
 
 
 
 
 ## Illinois Congressional Districts 
-houseillower <- readOGR(dsn = "./data",layer = "tl_2016_17_sldl", verbose = FALSE)
+# houseillower <- readOGR(dsn = "./data",layer = "tl_2016_17_sldl", verbose = FALSE)
+# houseillower <- sf::st_read("./data",layer = "tl_2016_17_sldl")
+# houseilupper <- readOGR(dsn = "./data",layer = "tl_2016_17_sldu", verbose = FALSE)
+# houseilupper <- sf::st_read("./data", layer ="tl_2016_17_sldu")
 
-houseilupper <- readOGR(dsn = "./data",layer = "tl_2016_17_sldu", verbose = FALSE)
+houseillower <- sf::read_sf("./data/tl_2016_17_sldl.shp") %>%
+  sf::st_transform('+proj=longlat +datum=WGS84')
+
+houseilupper <- sf::read_sf('./data/tl_2016_17_sldu.shp') %>%
+  sf::st_transform('+proj=longlat +datum=WGS84')
 
 ##Creates dataframe of SpatialPolygonData
 houseillowerframe <- as.data.frame(houseillower)
 houseilupperframe <- as.data.frame(houseilupper)
 
 ##Reads in CSV
-illinois_senate <- read.csv("./data/illinoisstatesenators.csv",
-                            stringsAsFactors = FALSE)
+illinois_senate <- read.csv("./data/senate_info_2025.csv", stringsAsFactors = FALSE, encoding = "UTF-8")
+illinois_house <- read.csv("./data/house_info_2025.csv", stringsAsFactors = FALSE, encoding = "UTF-8")
 
+# Clean all character columns using iconv to remove invalid characters
+clean_columns <- function(df) {
+  df[] <- lapply(df, function(x) {
+    if (is.character(x)) {
+      iconv(x, from = "UTF-8", to = "UTF-8", sub = "byte")
+    } else {
+      x
+    }
+  })
+  return(df)
+}
 
-illinois_house <- read.csv("./data/illinoisstatehouse.csv",
-                           stringsAsFactors = FALSE)
+# Apply the cleaning function to both data frames
+illinois_senate <- clean_columns(illinois_senate)
+illinois_house <- clean_columns(illinois_house)
 
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-
+  
   
   
   ##Rename variables to match data frame for coercion
@@ -41,9 +63,9 @@ server <- function(input, output) {
   
   
   ##Can use cbind or left_join to bind the new data to the SpatialPolygonDataFrames
-  houseilupper@data <- cbind(houseilupper@data, illinois_senate)
+  houseilupper<- cbind(houseilupper, illinois_senate)
   
-  houseillower@data <- cbind(houseillower@data,illinois_house)
+  houseillower <- cbind(houseillower,illinois_house)
   
   
   
@@ -96,10 +118,8 @@ server <- function(input, output) {
                              "<br><strong>District: </strong>",
                              houserepublicans$SLDLST)
   
-  illinoismap<- leaflet() %>%
-    addTiles(group = "OSM (default)") %>%
-    addProviderTiles("Stamen.Toner", group = "Toner") %>%
-    addProviderTiles("Stamen.TonerLite", group = "Toner Lite") %>%
+  illinoismap<- leaflet(data = houseilupper) %>%
+    addTiles() %>%
     addPolygons(data = senatedemocrats,color = "blue",popup = senatedemo_popup,group = "Senate Democrat") %>%
     addPolygons(data = senaterepublicans,color = "red",popup = senaterepub_popup,group = "Senate Republican") %>%
     addPolygons(data = housedemocrats,color = "blue",popup = housedemo_popup,group = "House Democrat") %>%
@@ -120,8 +140,8 @@ server <- function(input, output) {
   # addLegend("bottomright",values = ~TOT_POP,pal = pal6,title = "Population by County")
   
   output$illinois <- renderLeaflet(illinoismap)
-   
-
+  
+  
   
 }
 

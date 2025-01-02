@@ -1,0 +1,119 @@
+Representative 	Bills 	Committees 	District 	Party
+Carol Ammons	Bills	Committees	103	D
+Jaime M. Andrade, Jr.	Bills	Committees	40	D
+Dagmara Avelar	Bills	Committees	85	D
+Harry Benton	Bills	Committees	97	D
+Diane Blair-Sherlock	Bills	Committees	46	D
+Kam Buckner	Bills	Committees	26	D
+Jason Bunting	Bills	Committees	106	R
+Kelly M. Burke	Bills	Committees	36	D
+John M. Cabello	Bills	Committees	90	R
+Mary Beth Canty	Bills	Committees	54	D
+Kelly M. Cassidy	Bills	Committees	14	D
+Dan Caulkins	Bills	Committees	88	R
+Sharon Chung	Bills	Committees	91	D
+Michael J. Coffey, Jr.	Bills	Committees	95	R
+Terra Costa Howard	Bills	Committees	42	D
+Fred Crespo	Bills	Committees	44	D
+Margaret Croke	Bills	Committees	12	D
+Christopher "C.D." Davidsmeyer	Bills	Committees	100	R
+Jed Davis	Bills	Committees	75	R
+William "Will" Davis	Bills	Committees	30	D
+Eva-Dina Delgado	Bills	Committees	3	D
+Anthony DeLuca	Bills	Committees	80	D
+Daniel Didech	Bills	Committees	59	D
+Kimberly Du Buclet	Bills	Committees	5	D
+Amy Elik	Bills	Committees	111	R
+Marcus C. Evans, Jr.	Bills	Committees	33	D
+Laura Faver Dias	Bills	Committees	62	D
+Mary E. Flowers	Bills	Committees	31	D
+La Shawn K. Ford	Bills	Committees	8	D
+Randy E. Frese	Bills	Committees	99	R
+David Friess	Bills	Committees	115	R
+Bradley Fritts	Bills	Committees	74	R
+Robyn Gabel	Bills	Committees	18	D
+Mary Gill	Bills	Committees	35	D
+Jennifer Gong-Gershowitz	Bills	Committees	17	D
+Edgar González, Jr.	Bills	Committees	23	D
+Jehan Gordon-Booth	Bills	Committees	92	D
+Amy L. Grant	Bills	Committees	47	R
+Nicolle Grasse	Bills	Committees	53	D
+Angelica Guerrero-Cuellar	Bills	Committees	22	D
+Will Guzzardi	Bills	Committees	39	D
+Jackie Haas	Bills	Committees	79	R
+Brad Halbrook	Bills	Committees	107	R
+Norine K. Hammond	Bills	Committees	94	R
+Matt Hanson	Bills	Committees	83	D
+Sonya M. Harper	Bills	Committees	6	D
+William E Hauter	Bills	Committees	87	R
+Elizabeth "Lisa" Hernandez	Bills	Committees	2	D
+Norma Hernandez	Bills	Committees	77	D
+Barbara Hernández	Bills	Committees	50	D
+Maura Hirschauer	Bills	Committees	49	D
+Jay Hoffman	Bills	Committees	113	D
+Hoan Huynh	Bills	Committees	13	D
+Paul Jacobs	Bills	Committees	118	R
+Lilian Jiménez	Bills	Committees	4	D
+Gregg Johnson	Bills	Committees	72	D
+Thaddeus Jones	Bills	Committees	29	D
+Tracy Katz Muhl	Bills	Committees	57	D
+Jeff Keicher	Bills	Committees	70	R
+Michael J. Kelly	Bills	Committees	15	D
+Stephanie A. Kifowit	Bills	Committees	84	D
+Nicole La Ha	Bills	Committees	82	R
+Jenn Ladisch Douglass	Bills	Committees	45	D
+Lindsey LaPointe	Bills	Committees	19	D
+Camille Y. Lilly	Bills	Committees	78	D
+Theresa Mah	Bills	Committees	24	D
+Natalie A. Manley	Bills	Committees	98	D
+Joyce Mason	Bills	Committees	61	D
+Rita Mayfield	Bills	Committees	60	D
+Tony M. McCombie	Bills	Committees	89	R
+Martin McLaughlin	Bills	Committees	52	R
+Charles Meier	Bills	Committees	109	R
+Debbie Meyers-Martin	Bills	Committees	38	D
+Chris Miller	Bills	Committees	101	R
+Anna Moeller	Bills	Committees	43	D
+Bob Morgan	Bills	Committees	58	D
+Yolonda Morris	Bills	Committees	9	D
+Martin J. Moylan	Bills	Committees	55	D
+Michelle Mussman	Bills	Committees	56	D
+Suzanne M. Ness	Bills	Committees	66	D
+Cyril Nichols	Bills	Committees	32	D
+Adam M. Niemerg	Bills	Committees	102	R
+Kevin John Olickal	Bills	Committees	16	D
+Aarón M. Ortíz	Bills	Committees	1	D
+Abdelnasser Rashid	Bills	Committees	21	D
+Steven Reick	Bills	Committees	63	R
+Robert "Bob" Rita	Bills	Committees	28	D
+Wayne A Rosenthal	Bills	Committees	108	R
+Jennifer Sanalitro	Bills	Committees	48	R
+Sue Scherer	Bills	Committees	96	D
+Kevin Schmidt	Bills	Committees	114	R
+Brandun Schweizer	Bills	Committees	104	R
+Dave Severin	Bills	Committees	116	R
+Patrick Sheehan	Bills	Committees	37	R
+Justin Slaughter	Bills	Committees	27	D
+Nicholas K. Smith	Bills	Committees	34	D
+Joe C. Sosnowski	Bills	Committees	69	R
+Ryan Spain	Bills	Committees	73	R
+Anne Stava-Murray	Bills	Committees	81	D
+Brad Stephens	Bills	Committees	20	R
+Katie Stuart	Bills	Committees	112	D
+Dan Swanson	Bills	Committees	71	R
+Nabeela Syed	Bills	Committees	51	D
+Curtis J. Tarver, II	Bills	Committees	25	D
+Dennis Tipsword, Jr.	Bills	Committees	105	R
+Dan Ugaste	Bills	Committees	65	R
+Dave Vella	Bills	Committees	68	D
+Lawrence "Larry" Walsh, Jr.	Bills	Committees	86	D
+Travis Weaver	Bills	Committees	93	R
+Tom Weber	Bills	Committees	64	R
+Emanuel "Chris" Welch	Bills	Committees	7	D
+Maurice A. West, II	Bills	Committees	67	D
+Blaine Wilhour	Bills	Committees	110	R
+Ann M. Williams	Bills	Committees	11	D
+Jawaharial Williams	Bills	Committees	10	D
+Patrick Windhorst	Bills	Committees	117	R
+Janet Yang Rohr	Bills	Committees	41	D
+Lance Yednock	Bills	Committees	76	D
